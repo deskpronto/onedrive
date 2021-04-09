@@ -163,7 +163,7 @@ final class OneDriveApi
 		switch(azureConfigValue) {
 			case "":
 				if (tenantId == "common") {
-					log.log("Configuring Global Azure AD Endpoints");
+					log.log(" ");
 				} else {
 					log.log("Configuring Global Azure AD Endpoints - Single Tenant Application");
 				}
@@ -946,7 +946,7 @@ final class OneDriveApi
 			// Download Progress Bar
 			size_t iteration = 20;
 			Progress p = new Progress(iteration);
-			p.title = "Downloading";
+			p.title = "Baixando";
 			writeln();
 			bool barInit = false;
 			real previousDLPercent = -1.0;
