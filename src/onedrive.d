@@ -426,7 +426,7 @@ final class OneDriveApi
 		string authFilesString = cfg.getValueString("auth_files");
 		if (authFilesString == "") {
 			log.log("1. Clique com o botão direito no link abaixo e selecione a opção Abrir link:\n");
-			write(url, "\n\n", "2. Após inserir suas credenciais a aba do browser ficará toda em branco. Copie olink inteiro que aparecerá na barra de endereços e cole após dos dois pontos,  clicando com o botão esquerdo, selecionando a opção Colar e pressionando Enter depois: ");
+			write(url, "\n\n", "2. Após inserir suas credenciais a janela do navegador ficará em branco. Copie olink que aparecer na barra de endereço e cole aqui clicando com o botão esquerdoe selecionando a opção Colar. Pressione Enter em seguida: ");
 			readln(response);
 			cfg.applicationAuthorizeResponseUri = true;
 		} else {
