@@ -91,7 +91,7 @@ class Progress
 		if (counter != iterations){   
           footer.formattedWrite("|   ETA   %02d:%02d:%02d ", h, m, s);
 		} else {
-		  footer.formattedWrite("| DONE IN %02d:%02d:%02d ", h, m, s);
+		  footer.formattedWrite("| CONCLUÍDO EM %02d:%02d:%02d ", h, m, s);
 		}
       }
 

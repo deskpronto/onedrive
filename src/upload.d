@@ -171,7 +171,7 @@ struct UploadSession
 			// Upload Progress Bar
 			size_t iteration = (roundTo!int(double(fileSize)/double(fragmentSize)))+1;
 			Progress p = new Progress(iteration);
-			p.title = "Uploading";
+			p.title = "Subindo";
 			long fragmentCount = 0;
 			
 			// Initialise the download bar at 0%

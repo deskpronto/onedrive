@@ -3379,7 +3379,7 @@ final class SyncEngine
 						if (!testFileHash(path, item)) {
 							log.vlog("The file content has changed");
 							log.vdebug("The local item has a different hash when compared to ", itemSource, " item hash");
-							write("Uploading modified file ", path, " ... ");
+							write("Subindo arquivo modificado ", path, " ... ");
 							JSONValue response;
 							
 							if (!dryRun) {
@@ -4378,7 +4378,7 @@ final class SyncEngine
 							}
 							
 							// start of upload file
-							write("Uploading new file ", path, " ... ");
+							write("Subindo novo arquivo ", path, " ... ");
 							JSONValue response;
 							
 							// Calculate upload speed
@@ -4734,7 +4734,7 @@ final class SyncEngine
 							if (localFileModifiedTime > remoteFileModifiedTime){
 								// local file is newer
 								log.vlog("Requested file to upload is newer than existing file on OneDrive");
-								write("Uploading modified file ", path, " ... ");
+								write("Subindo arquivo modificado ", path, " ... ");
 								JSONValue response;
 								
 								if (!dryRun) {
