@@ -2445,7 +2445,7 @@ final class SyncEngine
 			break;
 		case ItemType.dir:
 		case ItemType.remote:
-			log.log("Creating local directory: ", path);
+			log.log("Criando a pasta local: ", path);
 			
 			// Issue #658 handling - is sync_list in use?
 			if (syncListConfigured) {
@@ -2752,8 +2752,8 @@ final class SyncEngine
 		}
 		
 		if (!downloadFailed) {
-			writeln("done.");
-			log.fileOnly("Baixando o arquivo ", path, " ... done.");
+			writeln("concluído.");
+			log.fileOnly("Baixando o arquivo ", path, " ... concluído.");
 		}
 	}
 
@@ -3451,7 +3451,7 @@ final class SyncEngine
 											return;
 										}
 										// upload done without error
-										writeln("done.");
+										writeln("concluído.");
 									} else {
 										writeln("");
 										try {
@@ -3488,7 +3488,7 @@ final class SyncEngine
 											return;
 										}
 										// upload done without error
-										writeln("done.");
+										writeln("concluído.");
 									}
 								} else {
 									// OneDrive Business Account
@@ -3566,7 +3566,7 @@ final class SyncEngine
 										// Did the upload fail?
 										if (!uploadFailed){
 											// upload done without error or failure
-											writeln("done.");
+											writeln("concluído.");
 											// As the session.upload includes the last modified time, save the response
 											// Is the response a valid JSON object - validation checking done in saveItem
 											saveItem(response);
@@ -3598,7 +3598,7 @@ final class SyncEngine
 											// Did the upload fail?
 											if (!uploadFailed){
 												// upload done without error or failure
-												writeln("done.");
+												writeln("concluído.");
 												// As the session.upload includes the last modified time, save the response
 												// Is the response a valid JSON object - validation checking done in saveItem
 												saveItem(response);
@@ -3636,10 +3636,10 @@ final class SyncEngine
 								}
 							} else {
 								// we are --dry-run - simulate the file upload
-								writeln("done.");
+								writeln("concluído.");
 								response = createFakeResponse(path);
 								// Log action to log file
-								log.fileOnly("Uploading modified file ", path, " ... done.");
+								log.fileOnly("Atualizando arquivo modificado ", path, " ... concluído.");
 								// Is the response a valid JSON object - validation checking done in saveItem
 								saveItem(response);
 								return;

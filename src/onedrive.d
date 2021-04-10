@@ -946,7 +946,7 @@ final class OneDriveApi
 			// Download Progress Bar
 			size_t iteration = 20;
 			Progress p = new Progress(iteration);
-			p.title = "Baixando";
+			p.title = "Progresso";
 			writeln();
 			bool barInit = false;
 			real previousDLPercent = -1.0;
