@@ -2555,7 +2555,7 @@ final class SyncEngine
 	private void downloadFileItem(const ref Item item, const(string) path)
 	{
 		assert(item.type == ItemType.file);
-		write("Downloading file ", path, " ... ");
+		write("Baixando o arquivo ", path, " ... ");
 		JSONValue fileDetails;
 		
 		try {
@@ -2753,7 +2753,7 @@ final class SyncEngine
 		
 		if (!downloadFailed) {
 			writeln("done.");
-			log.fileOnly("Downloading file ", path, " ... done.");
+			log.fileOnly("Baixando o arquivo ", path, " ... done.");
 		}
 	}
 

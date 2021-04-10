@@ -827,7 +827,7 @@ int main(string[] args)
 		} else {
 			if ((cfg.getValueString("get_file_link") == "") && (cfg.getValueString("create_share_link") == "")) {
 				// Print out that we are initializing the engine only if we are not grabbing the file link or creating a shareable link
-				log.logAndNotify("Initializing the Synchronization Engine ...");
+				log.logAndNotify(" ");
 			}
 		}
 	} catch (CurlException e) {
@@ -1374,7 +1374,7 @@ void performSync(SyncEngine sync, string singleDirectory, bool downloadOnly, boo
 						}
 					} else {
 						// sync from OneDrive first before uploading files to OneDrive
-						if (logLevel < MONITOR_LOG_SILENT) log.log("Syncing changes from OneDrive ...");
+						if (logLevel < MONITOR_LOG_SILENT) log.log("Sincronizando com o OneDrive ...");
 						
 						// For the initial sync, always use the delta link so that we capture all the right delta changes including adds, moves & deletes
 						logOutputMessage = "Initial Scan: Call OneDrive Delta API for delta changes as compared to last successful sync.";
